@@ -33,18 +33,18 @@ namespace ProgramChat
             //websocket.Send("I'm coming here.");
         }
 
-        void Update()
-        {
+        //void Update()
+        //{
             //if (Input.GetKeyDown(KeyCode.Return)) //Press Enter to send
             //{
-            //        websocket.Send("Rendom number : " + Random.Range(0, 999999));
+            //    websocket.Send("Rendom number : " + Random.Range(0, 999999));
             //    if (websocket.ReadyState == WebSocketState.Open)
             //    {
-            //        //newMSG = InputMes.text; //Show text output
+            //        newMSG = InputMes.text; //Show text output
             //        websocket.Send(InputUser.text + " : " + InputMes.text);
             //    }
             //}
-        }
+        //}
 
         public void GetInputOnClick() //Click mouse on button to send
         {
@@ -73,14 +73,14 @@ namespace ProgramChat
 
         private void Receive()
         {
-                var newMSG = Instantiate(ChatBox, BGBox);
-                newMSG.GetComponent<Text>().text = mes + "\n"; //Chat box move up
-                newMSG.transform.SetSiblingIndex(0);
+            var newMSG = Instantiate(ChatBox, BGBox);
+            newMSG.GetComponent<Text>().text = mes + "\n"; //Chat box move up
+            newMSG.transform.SetSiblingIndex(0);
 
-                if (InputUser.text + " " == msg[0])
-                {
-                    newMSG.GetComponent<Text>().alignment = TextAnchor.LowerRight;
-                }
+            if (InputUser.text + " " == msg[0])
+            {
+                newMSG.GetComponent<Text>().alignment = TextAnchor.LowerRight;
+            }
         }
     }
 }
