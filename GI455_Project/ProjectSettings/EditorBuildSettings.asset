@@ -11,7 +11,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/ProgramChat/Scenes/Week2-2.unity
     guid: d5ebf7f0ea4706c429e607fc990c65f5
-  - enabled: 1
+  - enabled: 0
     path: Assets/ProgramChatWithJson/Scenes/Chat.unity
     guid: ffc743c120683e2428ffd88c2a51f97a
   - enabled: 0
@@ -23,4 +23,7 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/ProgramChatWithJsonW5/Scenes/ProgramChatW5.unity
+    guid: 6b7a5425cb1651f479c8aeab952e112b
   m_configObjects: {}
